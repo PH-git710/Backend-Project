@@ -24,12 +24,12 @@ return response;
 }
 
 
-cloudinary.v2.uploader.upload(
+cloudinary.uploader.upload(
   "https://picsum.photos/seed/picsum/200/300",
   {
     public_id: "olympic_flag",
   },
-  function (erroe, result) {
+  function (error, result) {
     console.log(result);
   },
 );
